@@ -7,6 +7,13 @@
 // 基礎輸出題目
 void print_escape_sequences(std::ostream& out) {
     // TODO: 使用 out 輸出課堂中的 7 行範例文字與跳脫字元練習
+    out << "1.快樂星球" << endl;       // 一般輸出
+    out << "2.快樂 星球" << endl;      // 輸出空格
+    out << "3.快樂\t星球" << endl;       // \t = Tab (定位字元)
+    out << "4.快樂\n星球\n" << endl;     // \n = new line (換行)
+    out << "\"5.快樂\"" << endl;       // \" = 顯示雙引號 "
+    out << "\'6.快樂\'" << endl;       // \' = 顯示單引號 '
+    out << "\\7.快樂\\" << endl;       // \\ = 顯示反斜線 \
 }
 
 void print_scores(std::ostream& out, const std::vector<int>& scores) {
